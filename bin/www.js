@@ -2,7 +2,7 @@
 /**
  * Module dependencies.
  */
- var app = require('../server').default;
+ var app = require('../server');
  var debug = require('debug')('express-dev-skills:server');
  var http = require('http');
  /**
