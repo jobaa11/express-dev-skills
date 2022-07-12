@@ -1,11 +1,16 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <title><%= title %></title>
-    <link rel='stylesheet' href='/stylesheets/style.css' />
-  </head>
+<%- include('../partials/header') %>
+
   <body>
-    <h1><%= title %></h1>
-    <p>Welcome to <%= title %></p>
+    <h1>Todos</h1>
+    <ul>
+      <% todos.forEach(function(t) { %>
+        <li>
+          <a href="/todos/<%= t.id %>"><%= t.skill %></a>
+            - 
+          <%= t.done ? 'done' : 'not done' %>
+        </li>
+      <% }); %>
+    </ul>
   </body>
+
 </html>
