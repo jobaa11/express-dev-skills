@@ -1,16 +1,15 @@
 <%- include('../partials/header')  %>
 
-<h1>skills as of <%= time %></h1>
-    <ul>
-      <% skills.forEach(function(s) { %>
-        <li>
-          <a href="/skills/<%= s.id %>"><%= s.skill %></a>
-            - 
-          <%= s.acquired ? 'acquired' : 'acquired?' %>
-        </li>
-      <% }); %>
-    </ul>
-    <a href="/skills/new">Add Skill</a>
+<h1>Skills as of <%= time %></h1>
+<ul>
+  <% skills.forEach(function(s) { %>
+    <li>
+      <a href="/skills/<%= s.id %>"><%= s.skill %></a>
+        - 
+      <%= s.acquired ? 'acquired' : 'acquired?' %>
+    </li>
+  <% }); %>
+</ul>
+<a href="/skills/new">Add Skill</a>
 
-    <%- include('../partials/footer') %>
-
+<%- include('../partials/footer') %>
