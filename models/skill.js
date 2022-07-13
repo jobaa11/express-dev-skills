@@ -1,4 +1,4 @@
-const skill = [
+const skills = [
     {id: 010, skill: 'CSS', aqcuired: true},
     {id: 224, skill: 'Javascript', aqcuired: true},
     {id: 464, skill: 'Python', aqcuired: false}
@@ -11,9 +11,9 @@ const skill = [
   
   function getOne(id) {
     id = parseInt(id);
-    return skill.find((skill) => skill.id === id);
+    return skills.find((skill) => skill.id === id);
   }
   
   function getAll() {
-    return skill;
+    return skills;
   }
