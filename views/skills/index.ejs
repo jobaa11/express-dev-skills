@@ -1,20 +1,16 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <title>Express</title>
-    <link rel='stylesheet' href='/stylesheets/style.css' />
-  </head>
-</html>
-  <body>
-    <h1>Skills</h1>
+<%- include('../partials/header')  %>
+
+<h1>skills as of <%= time %></h1>
     <ul>
       <% skills.forEach(function(s) { %>
         <li>
           <a href="/skills/<%= s.id %>"><%= s.skill %></a>
             - 
-          <%= s.acquired ? 'Acquired' : 'Acquired?' %>
+          <%= s.acquired ? 'acquired' : 'acquired?' %>
         </li>
       <% }); %>
     </ul>
-  </body>
+    <a href="/skills/new">Add Skill</a>
+
+    <%- include('../partials/footer') %>
 
