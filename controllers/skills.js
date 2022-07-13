@@ -10,7 +10,7 @@ function show(req, res) {
   // All route params are accessed via the req.params object
   // console.log(req.params)
   const todo = Skill.getOne(req.params.id);
-  res.render('todos/show', { skill });
+  res.render('skills/show', { skill });
 }
 
 function index(req, res) {

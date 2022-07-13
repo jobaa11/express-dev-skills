@@ -1,4 +1,4 @@
-const todos = [
+const skills = [
     {id: 010, skill: 'CSS', aqcuired: true},
     {id: 224, skill: 'Javascript', aqcuired: true},
     {id: 464, skill: 'Python', aqcuired: false}
