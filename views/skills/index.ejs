@@ -1,23 +1,18 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title><%= title %></title>
+    <title>Express</title>
     <link rel='stylesheet' href='/stylesheets/style.css' />
   </head>
-  <body>
-    <h1><%= title %></h1>
-    <p>Welcome to <%= title %></p>
-  </body>
 </html>
-
   <body>
     <h1>Skills</h1>
     <ul>
-      <% skills.forEach(function(t) { %>
+      <% skills.forEach(function(s) { %>
         <li>
           <a href="/skills/<%= s.id %>"><%= s.skill %></a>
             - 
-          <%= s.done ? 'done' : 'not done' %>
+          <%= s.Acquired ? 'Acquired' : 'TBD' %>
         </li>
       <% }); %>
     </ul>

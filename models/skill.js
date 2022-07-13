@@ -1,4 +1,4 @@
-const skills = [
+const skill = [
     {id: 010, skill: 'CSS', aqcuired: true},
     {id: 224, skill: 'Javascript', aqcuired: true},
     {id: 464, skill: 'Python', aqcuired: false}
@@ -15,5 +15,5 @@ const skills = [
   }
   
   function getAll() {
-    return skills;
+    return skill;
   }
