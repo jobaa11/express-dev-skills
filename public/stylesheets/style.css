@@ -6,12 +6,17 @@ body {
   height: 100vh;
   display: grid;
   padding: 50px;
-  grid-template-rows: 1fr 2fr;
+  /* grid-template-rows: repeat(3, 20%); */
   justify-content: center;
   margin: 0 auto;
   font-family: 'Roboto', sans-serif;
-  background: rgb(165, 159, 159);
+  /* background: rgb(165, 159, 159); */
+  background-image: url('../images/istockphoto-1015425392-612x612.jpeg');
+  background-repeat: no-repeat;
+  background-size:cover;
+  back
 }
+
 
 a {
   color: #2f97c0;
@@ -26,15 +31,19 @@ justify-content: center;
 background-color: aqua;
 border: 2px solid powderblue;
 border-radius: 5%;
+margin-bottom: 2vmin;
 /* grid-template-columns: repeat(1, 5vmin); */
 }
 
 h1 {
 display: grid; 
+margin-top: 1vmin;
+height: 40%;
+margin: 10px;
 justify-content: center;
-background-color: powderblue;
 border: 2px solid powderblue;
 border-radius: 5%;
+color: aqua;
 }
 
 .delete-form {
@@ -50,9 +59,15 @@ li {
   list-style: none;
 }
 
+ul {
+display: grid;
+justify-content: center;
+}
+
 
 form {
-
+  display: grid;
+  gap: 2vmin;
   justify-content: center;
 
 }
