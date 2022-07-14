@@ -13,7 +13,7 @@ const skills = [
   };
   
 
-  function update(id, updatedTodo) {
+  function update(id, updatedSkill) {
     id = parseInt(id);
     const skill = skills.find((skill) => skill.id === id);
     // Merge the updatedTodo's properties into the 

@@ -22,7 +22,7 @@ function edit(req, res) {
 }
 
 function deleteSkill(req, res) {
-  skill.delete(req.params.id);
+  Skill.delete(req.params.id);
   // If data is mutated we need to redirect
   // Where we redirect to, is entirely up to you
   // what do want your app to do?
