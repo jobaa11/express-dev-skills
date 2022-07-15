@@ -25,6 +25,9 @@ a {
 #skill {
   display: grid;
 }
+#edit {
+  display: grid;
+}
 
 div {
   padding: 10px;
