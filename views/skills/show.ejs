@@ -2,8 +2,7 @@
 
   <h1>Skill #<%= skill.id %></h1>
   <h3><%= skill.skill %></h3>
-  <h3>Complete: <%= skill.aqcuired ? 'Yes' : 'TBD' %></h3>
+  <h3>Complete: <%= skill.acquired ? 'Yes' : 'TBD' %></h3>
   <a href="/skills/<%= skill.id %>/edit">EDIT TODO</a>
-  
-  
-  <%- include('../partials/footer') %>
+
+<%- include('../partials/footer') %>
